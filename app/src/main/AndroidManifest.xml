@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nikolai.finstagram">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name="com.nikolai.finstagram.screens.FinstagramApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.nikolai.finstagram.screens.directmessage.AddIGUserActivity"></activity>
+        <activity android:name="com.nikolai.finstagram.screens.chat.ChatActivity" />
+        <activity android:name="com.nikolai.finstagram.screens.directmessage.DirectMessageActivity" />
+        <activity android:name="com.nikolai.finstagram.screens.home.HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nikolai.finstagram.screens.search.SearchActivity"
+            android:multiprocess="false" />
+        <activity
+            android:name="com.nikolai.finstagram.screens.share.ShareActivity"
+            android:multiprocess="false" />
+        <activity
+            android:name="com.nikolai.finstagram.screens.notifications.NotificationsActivity"
+            android:multiprocess="false" />
+        <activity
+            android:name="com.nikolai.finstagram.screens.profile.ProfileActivity"
+            android:multiprocess="false" />
+        <activity
+            android:name="com.nikolai.finstagram.screens.editprofile.EditProfileActivity"
+            android:multiprocess="false" />
+        <activity
+            android:name="com.nikolai.finstagram.screens.login.LoginActivity"
+            android:multiprocess="false"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.nikolai.finstagram.screens.register.RegisterActivity"
+            android:multiprocess="false"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.nikolai.finstagram.screens.profilesettings.ProfileSettingsActivity"
+            android:multiprocess="false" />
+        <activity
+            android:name="com.nikolai.finstagram.screens.addfriends.AddFriendsActivity"
+            android:multiprocess="false" />
+        <activity
+            android:name="com.nikolai.finstagram.screens.comments.CommentsActivity"
+            android:multiprocess="false" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.nikolai.finstagram.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

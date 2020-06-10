@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#FEFEFE</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="whiteish">#FAFAFA</color>
+    <color name="white">#FFF</color>
+    <color name="black">#000</color>
+    <color name="grey">#BBB</color>
+    <color name="blue">#3897F0</color>
+    <color name="red">#D9555A</color>
+    <color name="bt_text_color">#114A58</color>
+    <color name="sent_msg_bg_color">#EFEFEF</color>
+    <color name="input_msg_bg">#DADADA</color>
+    <color name="chat_text">#2B2B2B</color>
+</resources>
